@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//cdn.syncfusion.com/ej2/ej2-base/styles/material.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//cdn.syncfusion.com/ej2/ej2-popups/styles/material.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//cdn.syncfusion.com/ej2/ej2-splitbuttons/styles/material.css"
+      rel="stylesheet"
+    />
+    <link
+      href="//cdn.syncfusion.com/ej2/ej2-inputs/styles/material.css"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"
+      type="text/javascript"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Paint</title>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="tools">
+
+        <div class="brush-size">
+          <p class="head">Brush size</p>
+          <input type="range" name="" id="brush-size" />
+        </div>
+
+        <div class="color-picker">
+          <div class="wrap">
+            <h4>Choose color</h4>
+            <input id="element" type="color" />
+          </div>
+        </div>
+
+        <div class="Edge-type">
+          <p class="head">Edge type</p>
+          <div class="btns">
+            <button id="round" class="btn" value="round">Round</button>
+            <button id="square" class="btn" value="square">Square</button>
+          </div>
+        </div>
+
+        <div class="eraser-size">
+          <p class="head">Eraser Size</p>
+          <input type="range" name="" id="eraser-size" />
+        </div>
+        
+      </div>
+
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
